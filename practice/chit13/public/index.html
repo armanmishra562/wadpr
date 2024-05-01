@@ -1,0 +1,47 @@
+<!-- public/index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD API Test</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>User Management</h1>
+
+    <!-- Form to add a new user -->
+    <form id="userForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+        <button type="submit">Add User</button>
+    </form>
+
+    <!-- Form to update an existing user -->
+    <form id="updateForm">
+        <h2>Update User</h2>
+        <label for="updateId">User ID:</label>
+        <input type="text" id="updateId" name="updateId" required>
+        <label for="updateName">Name:</label>
+        <input type="text" id="updateName" name="updateName" required>
+        <label for="updateEmail">Email:</label>
+        <input type="email" id="updateEmail" name="updateEmail" required>
+        <button type="submit">Update User</button>
+    </form>
+
+    <!-- Form to delete an existing user -->
+    <form id="deleteForm">
+        <h2>Delete User</h2>
+        <label for="deleteId">User ID:</label>
+        <input type="text" id="deleteId" name="deleteId" required>
+        <button type="submit">Delete User</button>
+    </form>
+
+    <!-- User list -->
+    <div id="userList"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
